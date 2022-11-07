@@ -62,7 +62,7 @@ export default {
         @click="createActivity">+ Tambah</button>
     </div>
 
-    <div v-if="activities?.length > 0" class="todo-list grid grid-cols-4 gap-4">
+    <div v-if="activities?.length > 0" class="todo-list grid grid-cols-4 gap-4" data-cy="activity-item">
       <TodoCard v-for="(activity,idx) in activities" 
       :key="activity.id" 
       :idx ="idx"
