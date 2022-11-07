@@ -18,7 +18,9 @@ export default {
     transition="none"
     data-cy="modal-information"
   >
-      <div class="bg-white w-full rounded rounded-xl shadow-2xl flex flex-col">
+      <div
+      @click="this.alertModalState=false"
+      class="bg-white w-full rounded rounded-xl shadow-2xl flex flex-col">
         <div class="modal-header py-3 px-7">
           <h2 data-cy="modal-information-title">
             Activity berhasil dihapus
