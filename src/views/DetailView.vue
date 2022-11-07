@@ -169,12 +169,10 @@ export default {
       <div class="todo-title flex items-center">
         <div data-cy="todo-back-button" class="bg-[url('../assets/todo-back-button.svg')] w-8 h-8 bg-no-repeat mr-5 hover:cursor-pointer"
           @click="this.$router.push('/')"></div>
-        <div>
           <input v-show="editState" type="text" name="" ref="titleipt" id="title-input" v-model="inputTitle" @focusout="updateTitle()" />
           <h1 data-cy="todo-title" v-show="!editState" class="text-4xl font-bold mr-5" @click="setEditState()">
             {{ inputTitle }}
           </h1>
-        </div>
         <div data-cy="todo-title-edit-button" class="bg-[url('../assets/todo-title-edit-button.svg')] w-6 h-6 bg-no-repeat" @click="setEditState()"></div>
       </div>
 

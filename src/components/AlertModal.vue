@@ -13,11 +13,11 @@ export default {
 
 <template>
     <v-dialog
+    class="w-full max-w-4xl"
     v-model="alertModalState"
     transition="none"
-    data-cy="modal-infromation"
+    data-cy="modal-information"
   >
-    <div class="relative mx-auto w-full max-w-lg">
       <div class="bg-white w-full rounded rounded-xl shadow-2xl flex flex-col">
         <div class="modal-header py-3 px-7">
           <h2 data-cy="modal-information-title">
@@ -25,7 +25,6 @@ export default {
           </h2>
         </div>
       </div>
-    </div>
     </v-dialog>
 </template>
 

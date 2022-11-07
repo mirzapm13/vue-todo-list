@@ -87,8 +87,8 @@ export default {
 </script>
 
 <template>
-  <v-dialog v-model="this.addModalState" activator="#add-mdl-button" transition="none">
-    <div class="relative mx-auto w-full max-w-4xl">
+  <v-dialog v-model="this.addModalState" activator="#add-mdl-button" transition="none" class="w-full max-w-4xl">
+    <!-- <div class="relative mx-auto w-full max-w-4xl"> -->
       <div class="bg-white w-full max-w-screen-lg rounded rounded-xl shadow-2xl flex flex-col">
         <div class="modal-header flex justify-between items-center py-6 px-7">
           <h2
@@ -141,7 +141,7 @@ export default {
           </button>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
   </v-dialog>
 </template>
 
