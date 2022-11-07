@@ -115,7 +115,11 @@ export default {
             class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="username">
               PRIORITY
             </label>
-            <v-select 
+            <select class="w-44" v-model="this.editedStatus" data-cy="modal-add-priority-dropdown">
+              <option v-for="(item,id) in items" :key="id" :value="item.value" data-cy="modal-add-priority-item">{{ item.text }}</option>
+            </select>
+
+            <!-- <v-select 
             data-cy="modal-add-priority-dropdown"
             class="w-44" 
             :items="items" 
@@ -125,7 +129,7 @@ export default {
             item-title="text"
             item-value="value">
 
-            </v-select>
+            </v-select> -->
           </div>
         </div>
         <hr />
